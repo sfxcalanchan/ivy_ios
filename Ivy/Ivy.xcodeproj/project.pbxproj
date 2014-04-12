@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E71F15AC18F92B53007303AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E71F15AB18F92B53007303AC /* Foundation.framework */; };
+		E71F15AE18F92B53007303AC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E71F15AD18F92B53007303AC /* CoreGraphics.framework */; };
+		E71F15B018F92B53007303AC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E71F15AF18F92B53007303AC /* UIKit.framework */; };
+		E71F15B618F92B53007303AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E71F15B418F92B53007303AC /* InfoPlist.strings */; };
+		E71F15B818F92B53007303AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E71F15B718F92B53007303AC /* main.m */; };
+		E71F15BC18F92B53007303AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E71F15BB18F92B53007303AC /* AppDelegate.m */; };
+		E71F15BE18F92B53007303AC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E71F15BD18F92B53007303AC /* Images.xcassets */; };
+		E71F15C518F92B53007303AC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E71F15C418F92B53007303AC /* XCTest.framework */; };
+		E71F15C618F92B53007303AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E71F15AB18F92B53007303AC /* Foundation.framework */; };
+		E71F15C718F92B53007303AC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E71F15AF18F92B53007303AC /* UIKit.framework */; };
+		E71F15CF18F92B53007303AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E71F15CD18F92B53007303AC /* InfoPlist.strings */; };
+		E71F15D118F92B53007303AC /* IvyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E71F15D018F92B53007303AC /* IvyTests.m */; };
+		E71F15E318F92ECB007303AC /* BeaconAdvertisingService.m in Sources */ = {isa = PBXBuildFile; fileRef = E71F15DD18F92ECB007303AC /* BeaconAdvertisingService.m */; };
+		E71F15E418F92ECB007303AC /* BeaconMonitoringService.m in Sources */ = {isa = PBXBuildFile; fileRef = E71F15DF18F92ECB007303AC /* BeaconMonitoringService.m */; };
+		E71F15E518F92ECB007303AC /* MultipeerConnectivityService.m in Sources */ = {isa = PBXBuildFile; fileRef = E71F15E218F92ECB007303AC /* MultipeerConnectivityService.m */; };
+		E71F15E918F93372007303AC /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E71F15E718F93372007303AC /* MainViewController.m */; };
+		E71F15EA18F93372007303AC /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E71F15E818F93372007303AC /* MainViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E71F15C818F92B53007303AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E71F15A018F92B53007303AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E71F15A718F92B53007303AC;
+			remoteInfo = Ivy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E71F15A818F92B53007303AC /* Ivy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ivy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E71F15AB18F92B53007303AC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E71F15AD18F92B53007303AC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E71F15AF18F92B53007303AC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E71F15B318F92B53007303AC /* Ivy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ivy-Info.plist"; sourceTree = "<group>"; };
+		E71F15B518F92B53007303AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E71F15B718F92B53007303AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E71F15B918F92B53007303AC /* Ivy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ivy-Prefix.pch"; sourceTree = "<group>"; };
+		E71F15BA18F92B53007303AC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E71F15BB18F92B53007303AC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E71F15BD18F92B53007303AC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E71F15C318F92B53007303AC /* IvyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IvyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E71F15C418F92B53007303AC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E71F15CC18F92B53007303AC /* IvyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IvyTests-Info.plist"; sourceTree = "<group>"; };
+		E71F15CE18F92B53007303AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E71F15D018F92B53007303AC /* IvyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IvyTests.m; sourceTree = "<group>"; };
+		E71F15DC18F92ECB007303AC /* BeaconAdvertisingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconAdvertisingService.h; sourceTree = "<group>"; };
+		E71F15DD18F92ECB007303AC /* BeaconAdvertisingService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconAdvertisingService.m; sourceTree = "<group>"; };
+		E71F15DE18F92ECB007303AC /* BeaconMonitoringService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconMonitoringService.h; sourceTree = "<group>"; };
+		E71F15DF18F92ECB007303AC /* BeaconMonitoringService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconMonitoringService.m; sourceTree = "<group>"; };
+		E71F15E118F92ECB007303AC /* MultipeerConnectivityService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipeerConnectivityService.h; sourceTree = "<group>"; };
+		E71F15E218F92ECB007303AC /* MultipeerConnectivityService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipeerConnectivityService.m; sourceTree = "<group>"; };
+		E71F15E618F93372007303AC /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		E71F15E718F93372007303AC /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		E71F15E818F93372007303AC /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E71F15A518F92B53007303AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E71F15AE18F92B53007303AC /* CoreGraphics.framework in Frameworks */,
+				E71F15B018F92B53007303AC /* UIKit.framework in Frameworks */,
+				E71F15AC18F92B53007303AC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E71F15C018F92B53007303AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E71F15C518F92B53007303AC /* XCTest.framework in Frameworks */,
+				E71F15C718F92B53007303AC /* UIKit.framework in Frameworks */,
+				E71F15C618F92B53007303AC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E71F159F18F92B53007303AC = {
+			isa = PBXGroup;
+			children = (
+				E71F15DA18F92ECB007303AC /* Library */,
+				E71F15B118F92B53007303AC /* Ivy */,
+				E71F15CA18F92B53007303AC /* IvyTests */,
+				E71F15AA18F92B53007303AC /* Frameworks */,
+				E71F15A918F92B53007303AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E71F15A918F92B53007303AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E71F15A818F92B53007303AC /* Ivy.app */,
+				E71F15C318F92B53007303AC /* IvyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E71F15AA18F92B53007303AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E71F15AB18F92B53007303AC /* Foundation.framework */,
+				E71F15AD18F92B53007303AC /* CoreGraphics.framework */,
+				E71F15AF18F92B53007303AC /* UIKit.framework */,
+				E71F15C418F92B53007303AC /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E71F15B118F92B53007303AC /* Ivy */ = {
+			isa = PBXGroup;
+			children = (
+				E71F15BA18F92B53007303AC /* AppDelegate.h */,
+				E71F15BB18F92B53007303AC /* AppDelegate.m */,
+				E71F15BD18F92B53007303AC /* Images.xcassets */,
+				E71F15B218F92B53007303AC /* Supporting Files */,
+				E71F15E618F93372007303AC /* MainViewController.h */,
+				E71F15E718F93372007303AC /* MainViewController.m */,
+				E71F15E818F93372007303AC /* MainViewController.xib */,
+			);
+			path = Ivy;
+			sourceTree = "<group>";
+		};
+		E71F15B218F92B53007303AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E71F15B318F92B53007303AC /* Ivy-Info.plist */,
+				E71F15B418F92B53007303AC /* InfoPlist.strings */,
+				E71F15B718F92B53007303AC /* main.m */,
+				E71F15B918F92B53007303AC /* Ivy-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E71F15CA18F92B53007303AC /* IvyTests */ = {
+			isa = PBXGroup;
+			children = (
+				E71F15D018F92B53007303AC /* IvyTests.m */,
+				E71F15CB18F92B53007303AC /* Supporting Files */,
+			);
+			path = IvyTests;
+			sourceTree = "<group>";
+		};
+		E71F15CB18F92B53007303AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E71F15CC18F92B53007303AC /* IvyTests-Info.plist */,
+				E71F15CD18F92B53007303AC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E71F15DA18F92ECB007303AC /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				E71F15DB18F92ECB007303AC /* IBeaconApi */,
+			);
+			name = Library;
+			path = Ivy/Library;
+			sourceTree = "<group>";
+		};
+		E71F15DB18F92ECB007303AC /* IBeaconApi */ = {
+			isa = PBXGroup;
+			children = (
+				E71F15DC18F92ECB007303AC /* BeaconAdvertisingService.h */,
+				E71F15DD18F92ECB007303AC /* BeaconAdvertisingService.m */,
+				E71F15DE18F92ECB007303AC /* BeaconMonitoringService.h */,
+				E71F15DF18F92ECB007303AC /* BeaconMonitoringService.m */,
+				E71F15E018F92ECB007303AC /* Multipeer */,
+			);
+			path = IBeaconApi;
+			sourceTree = "<group>";
+		};
+		E71F15E018F92ECB007303AC /* Multipeer */ = {
+			isa = PBXGroup;
+			children = (
+				E71F15E118F92ECB007303AC /* MultipeerConnectivityService.h */,
+				E71F15E218F92ECB007303AC /* MultipeerConnectivityService.m */,
+			);
+			path = Multipeer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E71F15A718F92B53007303AC /* Ivy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E71F15D418F92B53007303AC /* Build configuration list for PBXNativeTarget "Ivy" */;
+			buildPhases = (
+				E71F15A418F92B53007303AC /* Sources */,
+				E71F15A518F92B53007303AC /* Frameworks */,
+				E71F15A618F92B53007303AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ivy;
+			productName = Ivy;
+			productReference = E71F15A818F92B53007303AC /* Ivy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E71F15C218F92B53007303AC /* IvyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E71F15D718F92B53007303AC /* Build configuration list for PBXNativeTarget "IvyTests" */;
+			buildPhases = (
+				E71F15BF18F92B53007303AC /* Sources */,
+				E71F15C018F92B53007303AC /* Frameworks */,
+				E71F15C118F92B53007303AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E71F15C918F92B53007303AC /* PBXTargetDependency */,
+			);
+			name = IvyTests;
+			productName = IvyTests;
+			productReference = E71F15C318F92B53007303AC /* IvyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E71F15A018F92B53007303AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Alan Chan";
+				TargetAttributes = {
+					E71F15C218F92B53007303AC = {
+						TestTargetID = E71F15A718F92B53007303AC;
+					};
+				};
+			};
+			buildConfigurationList = E71F15A318F92B53007303AC /* Build configuration list for PBXProject "Ivy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E71F159F18F92B53007303AC;
+			productRefGroup = E71F15A918F92B53007303AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E71F15A718F92B53007303AC /* Ivy */,
+				E71F15C218F92B53007303AC /* IvyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E71F15A618F92B53007303AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E71F15B618F92B53007303AC /* InfoPlist.strings in Resources */,
+				E71F15EA18F93372007303AC /* MainViewController.xib in Resources */,
+				E71F15BE18F92B53007303AC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E71F15C118F92B53007303AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E71F15CF18F92B53007303AC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E71F15A418F92B53007303AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E71F15E318F92ECB007303AC /* BeaconAdvertisingService.m in Sources */,
+				E71F15E918F93372007303AC /* MainViewController.m in Sources */,
+				E71F15E518F92ECB007303AC /* MultipeerConnectivityService.m in Sources */,
+				E71F15BC18F92B53007303AC /* AppDelegate.m in Sources */,
+				E71F15B818F92B53007303AC /* main.m in Sources */,
+				E71F15E418F92ECB007303AC /* BeaconMonitoringService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E71F15BF18F92B53007303AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E71F15D118F92B53007303AC /* IvyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E71F15C918F92B53007303AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E71F15A718F92B53007303AC /* Ivy */;
+			targetProxy = E71F15C818F92B53007303AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E71F15B418F92B53007303AC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E71F15B518F92B53007303AC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E71F15CD18F92B53007303AC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E71F15CE18F92B53007303AC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E71F15D218F92B53007303AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E71F15D318F92B53007303AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E71F15D518F92B53007303AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ivy/Ivy-Prefix.pch";
+				INFOPLIST_FILE = "Ivy/Ivy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E71F15D618F92B53007303AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ivy/Ivy-Prefix.pch";
+				INFOPLIST_FILE = "Ivy/Ivy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E71F15D818F92B53007303AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Ivy.app/Ivy";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ivy/Ivy-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "IvyTests/IvyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E71F15D918F92B53007303AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Ivy.app/Ivy";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ivy/Ivy-Prefix.pch";
+				INFOPLIST_FILE = "IvyTests/IvyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E71F15A318F92B53007303AC /* Build configuration list for PBXProject "Ivy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E71F15D218F92B53007303AC /* Debug */,
+				E71F15D318F92B53007303AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E71F15D418F92B53007303AC /* Build configuration list for PBXNativeTarget "Ivy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E71F15D518F92B53007303AC /* Debug */,
+				E71F15D618F92B53007303AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E71F15D718F92B53007303AC /* Build configuration list for PBXNativeTarget "IvyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E71F15D818F92B53007303AC /* Debug */,
+				E71F15D918F92B53007303AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E71F15A018F92B53007303AC /* Project object */;
+}
